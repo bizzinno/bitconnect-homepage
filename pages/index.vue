@@ -1,6 +1,8 @@
 <template>
   <div class="container">
-    BODy
+    <client-only placeholder="loading...">
+      <newsTickr/>
+    </client-only>
   </div>
 </template>
 
@@ -24,7 +26,7 @@ import {
   // CHeading
 } from '@chakra-ui/vue'
 
-
+import newsTickr from '../myComponents/newsTickr'
 
 export default {
   name: 'App',
@@ -43,7 +45,9 @@ export default {
     // CModalCloseButton,
     // CIconButton,
     // CFlex,
-    // CHeading
+    // CHeading,
+    newsTickr,
+
   },
   inject: ['$chakraColorMode', '$toggleColorMode'],
   data () {
