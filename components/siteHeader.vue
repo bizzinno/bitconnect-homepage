@@ -128,7 +128,7 @@
 
                     </c-box>                
                     <c-box d="flex" >
-                        <CImage size="3rem" :src="require('@/assets/imgs/bihar-logo.png')" alt="" ml="1rem" mr="1rem" ></CImage>
+                        <CImage size="3rem" :src="require('@/assets/imgs/acc.png')" alt="" ml="1rem" mr="1rem" ></CImage>
                         <CImage width="2rem" h="3.2rem" :src="require('@/assets/imgs/emblem.png')" alt=""></CImage>                    
                     </c-box>
                 </c-box>
