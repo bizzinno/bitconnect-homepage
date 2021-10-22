@@ -3,6 +3,20 @@
     <client-only placeholder="loading...">
       <newsTickr/>
     </client-only>
+    <CBox id="hero"  d="flex" >
+      <CBox d="flex" h="30rem" w="100%" id="hero" alt=""/>
+        <CBox d="flex" flex-direction="column" position="absolute" h="30rem" w="100%" id="heading-container" alignItems="center" justifyContent="center" bg="#00000070" alt="">
+          <CHeading color="white">This open source season we are presenting the homepage of our super awesome app</CHeading>
+
+          <CBox>
+            <CBox as="img" :src="require('@/assets/imgs/dowb.png')" mt="2rem"/>
+          </CBox>
+        </CBox>
+    </CBox>
+
+    <authoritiesLogin/>
+
+
   </div>
 </template>
 
@@ -23,10 +37,14 @@ import {
   // CModalCloseButton,
   // CIconButton,
   // CFlex,
-  // CHeading
+  CHeading
 } from '@chakra-ui/vue'
 
 import newsTickr from '../myComponents/newsTickr'
+
+import authoritiesLogin from '../myComponents/authoritiesLogin'
+
+
 
 export default {
   name: 'App',
@@ -47,6 +65,7 @@ export default {
     // CFlex,
     // CHeading,
     newsTickr,
+    authoritiesLogin
 
   },
   inject: ['$chakraColorMode', '$toggleColorMode'],
@@ -89,3 +108,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+#hero{
+  background-image: url("../assets/imgs/hero.jpg"), linear-gradient(#eb01a5, #d13531);
+  background-size: cover;
+}
+</style>
