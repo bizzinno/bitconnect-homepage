@@ -15,6 +15,7 @@
     </CBox>
 
     <authoritiesLogin/>
+    <notifications/>
 
 
   </div>
@@ -41,9 +42,8 @@ import {
 } from '@chakra-ui/vue'
 
 import newsTickr from '../myComponents/newsTickr'
-
 import authoritiesLogin from '../myComponents/authoritiesLogin'
-
+import notifications from '../myComponents/notifications'
 
 
 export default {
@@ -65,7 +65,8 @@ export default {
     // CFlex,
     // CHeading,
     newsTickr,
-    authoritiesLogin
+    authoritiesLogin,
+    notifications
 
   },
   inject: ['$chakraColorMode', '$toggleColorMode'],
