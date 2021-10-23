@@ -32,11 +32,11 @@
                     <c-box  d="flex">
                         <CImage size="3rem" :src="require('@/assets/imgs/logo.webp')" alt="" fallback-src="https://via.placeholder.com/150"></CImage>
                         <c-box  pl="1rem">
-                            <CHeading as="h3" size="lg" tabindex="0">
-                                BIT Connect 
+                            <CHeading as="h3" size="lg" tabindex="0" font-family="'Squada One';">
+                                BIT Connect
                             </CHeading>
                             <c-box as="p"  tabindex="0">
-                                Connect with people
+                                Show your dramatic self to the world in anonimity 
                             </c-box>
                         </c-box>
                     </c-box>
